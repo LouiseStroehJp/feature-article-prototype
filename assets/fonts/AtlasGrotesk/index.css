@@ -1,0 +1,99 @@
+:root {
+  --font-family-atlas-grotesk: "AtlasGrotesk", sans-serif;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-ThinItalic-Web.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-Thin-Web.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-LightItalic-Web.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-Light-Web.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-RegularItalic-Web.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-Regular-Web.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-MediumItalic-Web.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-Medium-Web.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-BoldItalic-Web.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-Bold-Web.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-BlackItalic-Web.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AtlasGrotesk";
+  src: url("./AtlasGrotesk-Black-Web.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,99 @@
+:root {
+  --font-family-publico-headline: "PublicoHeadline", serif;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./PublicoHeadline-Light-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: italic;
+  font-weight: 300;
+  src: url("./PublicoHeadline-LightItalic-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./PublicoHeadline-Roman-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./PublicoHeadline-Italic-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./PublicoHeadline-Medium-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: italic;
+  font-weight: 500;
+  src: url("./PublicoHeadline-MediumItalic-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./PublicoHeadline-Bold-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./PublicoHeadline-BoldItalic-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./PublicoHeadline-Extrabold-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: italic;
+  font-weight: 800;
+  src: url("./PublicoHeadline-ExtraboldItalic-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./PublicoHeadline-Black-Web.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicoHeadline";
+  font-style: italic;
+  font-weight: 900;
+  src: url("./PublicoHeadline-BlackItalic-Web.woff2") format("woff2");
+  font-display: swap;
+}

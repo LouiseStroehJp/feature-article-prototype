@@ -1,0 +1,27 @@
+:root {
+  --font-family-capitolium: "Capitolium", serif;
+}
+
+@font-face {
+  display: "swap";
+  font-family: "Capitolium";
+  font-style: "normal";
+  font-weight: 400;
+  src: url("./Capitolium-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  display: "swap";
+  font-family: "Capitolium";
+  font-style: "normal";
+  font-weight: 500;
+  src: url("./Capitolium-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  display: "swap";
+  font-family: "Capitolium";
+  font-style: "normal";
+  font-weight: 700;
+  src: url("./Capitolium-Bold.woff2") format("woff2");
+}

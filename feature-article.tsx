@@ -1,11 +1,7 @@
 import Image from "next/image";
 import {
   CalendarIcon,
-  Clock3Icon,
-  TrendingUp,
-  Brain,
-  Cpu,
-  BarChart3,
+  Clock3Icon
 } from "lucide-react";
 
 export default function FeatureArticle() {
@@ -17,7 +13,7 @@ export default function FeatureArticle() {
           <p className="text-sm font-semibold text-primary/70 uppercase tracking-wider mb-2">
             TECHNOLOGY
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl tracking-tight mb-6 font-serif text-balance">
+          <h1 className="text-4xl md:text-5xl lg:text-7xl tracking-tight mb-6 font-serif break-words hyphens-auto">
             <span className="italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
@@ -49,15 +45,25 @@ export default function FeatureArticle() {
       </div>
 
       {/* Hero Section with Featured Image */}
-      <div className="relative w-full h-[40vh] lg:h-[70vh] mb-12">
-        {/* Featured Image */}
-        <Image
-          src="/top-image.jpg"
-          alt="Feature image for article"
-          fill
-          className="object-cover"
-          priority
-        />
+      <div className="flex flex-col realtive w-full items-center mb-12">
+        <div className="relative w-full h-[40vh] lg:h-[720px] max-w-screen-xl">
+          {/* Featured Image */}
+          <Image
+            src="https://photos.watchmedier.dk/watchmedier/resize:fill:1080:0:0/plain/https://photos.watchmedier.dk/Images/18058638/m25t5u/ALTERNATES/master-3_2/france-eu-parliament"
+            alt="Feature image for article"
+            fill
+            className="object-cover object-top"
+            priority
+          />
+          <p className="text-sm text-muted-foreground hidden lg:block lg:w-[200px] lg:absolute lg:bottom-0 lg:right-[-216px]">
+            Ursula von der Leyen, President of the European Commission, speaks
+            during a session of the European Parliament in Strasbourg, France.
+          </p>
+        </div>
+        <p className="text-xs text-muted-foreground mt-2 lg:hidden max-w-4xl mx-auto px-4">
+          Ursula von der Leyen, President of the European Commission, speaks
+          during a session of the European Parliament in Strasbourg, France.
+        </p>
       </div>
 
       {/* Article Content */}
@@ -85,17 +91,10 @@ export default function FeatureArticle() {
             capable of handling complex tasks.
           </p>
 
-          <blockquote>
-            "AI is the new electricity. Just as electricity transformed almost
-            everything 100 years ago, today I actually have a hard time thinking
-            of an industry that I don't think AI will transform in the next
-            several years." — Andrew Ng, Co-founder of Google Brain
-          </blockquote>
-
           <h2>Transforming Healthcare</h2>
 
           {/* Left-aligned image */}
-          <div className="not-prose float-left mr-6 mb-4 w-full md:w-2/5">
+          {/* <div className="not-prose float-left mr-6 mb-4 w-full md:w-2/5">
             <div className="relative aspect-square rounded-lg overflow-hidden">
               <Image
                 src="/in-article-image.jpg"
@@ -108,7 +107,7 @@ export default function FeatureArticle() {
               AI-powered diagnostic tools can detect patterns invisible to the
               human eye.
             </p>
-          </div>
+          </div> */}
 
           <p>
             In healthcare, AI is being used to diagnose diseases, develop new
@@ -126,6 +125,14 @@ export default function FeatureArticle() {
             traditional methods.
           </p>
 
+          <aside className="m-10 relative w-full max-w-prose md:float-left md:clear-both -ml-60 md:w-96">
+            <svg className="mb-2 h-6 fill-curent" viewBox="0 0 48 31"><g fill="currentColor"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
+            <blockquote className="font-serif text-3xl border-none p-0 m-0 text-inherit">
+              I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
+            </blockquote>
+            <p className="text-xs lg:text-sm text-muted-foreground mt-2">Andrew Ng, Co-founder of Google Brain</p>
+          </aside>
+
           <p>
             Companies like PathAI are using machine learning to improve
             diagnostic accuracy, while others like Atomwise are using AI to
@@ -141,7 +148,7 @@ export default function FeatureArticle() {
           </p>
 
           {/* Redesigned Fact Box without grey backgrounds */}
-          <div className="not-prose my-12 rounded-lg overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10">
+          {/* <div className="not-prose my-12 rounded-lg overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10">
             <div className="p-6 md:p-8">
               <h3 className="font-normal uppercase tracking-wider text-sm mb-8 flex items-center text-primary/40 pb-2 font-sans border-b border-primary/10">
                 AI by the Numbers
@@ -203,25 +210,9 @@ export default function FeatureArticle() {
                 Source: PwC Global AI Study, 2023
               </div>
             </div>
-          </div>
+          </div> */}
 
           <h2>Revolutionizing Transportation</h2>
-
-          {/* Right-aligned image */}
-          <div className="not-prose float-right ml-6 mb-4 w-full md:w-2/5">
-            <div className="relative aspect-square rounded-lg overflow-hidden">
-              <Image
-                src="/autonomous-vehicle.jpg"
-                alt="Self-driving car technology"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <p className="text-xs text-muted-foreground mt-2">
-              Autonomous vehicles use AI to navigate complex environments
-              safely.
-            </p>
-          </div>
 
           <p>
             Self-driving cars represent one of the most visible applications of
@@ -238,6 +229,21 @@ export default function FeatureArticle() {
             their surroundings, then use AI to make split-second decisions about
             how to respond to changing conditions.
           </p>
+
+          <div className="not-prose my-8">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
+              <Image
+                src="/autonomous-vehicle.jpg"
+                alt="Self-driving car technology"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <p className="text-xs lg:text-sm text-muted-foreground mt-2 text-center">
+              Autonomous vehicles use AI to navigate complex environments
+              safely.
+            </p>
+          </div>
 
           <p>
             The potential benefits of self-driving technology extend far beyond
@@ -319,12 +325,7 @@ export default function FeatureArticle() {
             </div>
             <div>
               <h3
-                className="text-/**
-               * name
-               */
-              public name() {
-                
-              } font-semibold font-sans text-primary/90 uppercase"
+                className="font-semibold font-sans text-primary/90 uppercase"
               >
                 John Doe
               </h3>
