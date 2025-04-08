@@ -1,8 +1,4 @@
 import Image from "next/image";
-import {
-  CalendarIcon,
-  Clock3Icon
-} from "lucide-react";
 
 export default function FeatureArticle() {
   return (
@@ -10,35 +6,43 @@ export default function FeatureArticle() {
       {/* Article Header Content */}
       <div className="inset-0 flex flex-col justify-end">
         <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 w-full">
-          <p className="text-sm font-semibold text-primary/70 uppercase tracking-wider mb-2">
+          <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
             TECHNOLOGY
           </p>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl tracking-tight mb-6 font-serif break-words hyphens-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 font-serif break-words hyphens-auto">
             <span className="italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
             How Machine Learning is Transforming Industries
           </h1>
 
-          <div className="flex items-center gap-4 text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <div className="relative w-10 h-10 rounded-full overflow-hidden border border-white/20">
-                <Image
-                  src="/author.jpg"
-                  alt="Author"
-                  fill
-                  className="object-cover"
-                />
+          <div className="flex">
+            <div className="flex items-center gap-4 text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <div className="relative w-10 h-10 rounded-full overflow-hidden border border-white/20">
+                  <Image
+                    src="/author.jpg"
+                    alt="Author"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <span className="text-sm font-medium">By John Doe</span>
               </div>
-              <span className="text-sm font-medium">By John Doe</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <CalendarIcon className="h-4 w-4" />
-              <span className="text-sm">March 28, 2025</span>
-            </div>
-            <div className="flex items-center gap-1">
-              <Clock3Icon className="h-4 w-4" />
-              <span className="text-sm">8 min read</span>
+              <div className="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                </svg>
+
+                <span className="text-sm">March 28, 2025</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+
+                <span className="text-sm">8 min read</span>
+              </div>
             </div>
           </div>
         </div>
@@ -55,12 +59,12 @@ export default function FeatureArticle() {
             className="object-cover object-top"
             priority
           />
-          <p className="text-sm text-muted-foreground hidden lg:block lg:w-[200px] lg:absolute lg:bottom-0 lg:right-[-216px]">
+          <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px]">
             Ursula von der Leyen, President of the European Commission, speaks
             during a session of the European Parliament in Strasbourg, France.
           </p>
         </div>
-        <p className="text-xs text-muted-foreground mt-2 lg:hidden max-w-4xl mx-auto px-4">
+        <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4">
           Ursula von der Leyen, President of the European Commission, speaks
           during a session of the European Parliament in Strasbourg, France.
         </p>
@@ -130,7 +134,7 @@ export default function FeatureArticle() {
             <blockquote className="font-serif text-3xl border-none p-0 m-0 text-inherit">
               I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
             </blockquote>
-            <p className="text-xs lg:text-sm text-muted-foreground mt-2">Andrew Ng, Co-founder of Google Brain</p>
+            <p className="text-sm text-muted-foreground mt-2">Andrew Ng, Co-founder of Google Brain</p>
           </aside>
 
           <p>
