@@ -8,7 +8,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* Watch */
+/* body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
@@ -19,6 +20,19 @@ h4,
 h5 {
   font-family: PublicoHeadline, "Times New Roman", Times, serif;
   letter-spacing: -0.01em;
+} */
+
+body {
+  font-family: Capitolium, "Times New Roman", Times, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family:  Flama, Arial, Helvetica, sans-serif;
+  /* letter-spacing: -0.01em; */
 }
 
 @layer utilities {
@@ -104,13 +118,13 @@ h5 {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
   h1,
   h2,
   h3,
   h4,
   h5 {
-    @apply font-thin;
+    @apply font-thin font-serif;
   }
 }

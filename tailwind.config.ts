@@ -68,8 +68,12 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-family-montserra)"],
-        serif: ["var(--font-family-publico-headline)"],
+        // Watch
+        // sans: ["var(--font-family-montserra)"],
+        // serif: ["var(--font-family-publico-headline)"],
+        // Monitor
+        sans: ["var(--font-family-flama)"],
+        serif: ["var(--font-family-capitolium)"],
       },
       keyframes: {
         "accordion-down": {

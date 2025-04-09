@@ -1,10 +1,12 @@
+@import "../assets/fonts/Flama/index.css";
+@import "../assets/fonts/Capitolium/index.css";
+@import "../assets/fonts/AtlasGrotesk/index.css";
+@import "../assets/fonts/Montserrat/index.css";
+@import "../assets/fonts/PublicoHeadline/index.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 h1,
 h2 @layer utilities {
@@ -90,6 +92,6 @@ h2 @layer utilities {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
 }
