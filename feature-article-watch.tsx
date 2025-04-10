@@ -122,7 +122,7 @@ export default function FeatureArticleWatch() {
 
             <aside className="m-10 relative max-w-prose md:float-left md:clear-both 2xl:-ml-60 md:w-96">
               <svg className="mb-2 h-6" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
-              <blockquote className="font-heading text-3xl border-none p-0 m-0 text-inherit">
+              <blockquote className="font-heading text-3xl border-none p-0 m-0 text-foreground">
                 I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
               </blockquote>
               <p className="text-sm text-muted-foreground mt-2">Andrew Ng, Co-founder of Google Brain</p>
