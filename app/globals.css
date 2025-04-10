@@ -6,13 +6,18 @@
 
 @layer base {
   .watch {
-    --font-family-body: var(--font-family-montserra);
+    --font-family-body: var(--font-family-montserrat);
     --font-family-heading: var(--font-family-publico-headline);
   }
 
   .monitor {
     --font-family-body: var(--font-family-capitolium);
     --font-family-heading: var(--font-family-flama);
+  }
+
+  .kforum {
+    --font-family-body: var(--font-family-montserrat);
+    --font-family-heading: var(--font-family-atlas-grotesk);
   }
 }
 

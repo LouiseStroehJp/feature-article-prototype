@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-export default function FeatureArticleWatch() {
+export default function FeatureArticleKforum() {
   return (
-    <div className="watch font-body">
+    <div className="kforum font-body">
       {/* Article Header Content */}
       <div className="inset-0 flex flex-col justify-end">
         <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 w-full">
-          <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+          <p className="text-xs font-black text-foreground uppercase mb-2">
             TECHNOLOGY
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 font-heading break-words hyphens-auto">
-            <span className="italic">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 font-heading break-words hyphens-auto font-black">
+            <span className="text-[#3317db] italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
             How Machine Learning is Transforming Industries
@@ -28,7 +28,7 @@ export default function FeatureArticleWatch() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-bold text-foreground">John Doe</span>
+                  <span className="text-sm font-black">John Doe</span>
                   <span className="text-sm text-muted-foreground">13. september 2024</span>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function FeatureArticleWatch() {
               technologies are revolutionizing industries across the globe.
             </p>
 
-            <h2>The Rise of Machine Learning</h2>
+            <h2 className="font-black">The Rise of Machine Learning</h2>
             <p>
               Machine learning, a subset of artificial intelligence, has seen
               exponential growth in recent years. This technology allows computers
@@ -86,7 +86,7 @@ export default function FeatureArticleWatch() {
               capable of handling complex tasks.
             </p>
 
-            <h2>Transforming Healthcare</h2>
+            <h2 className="font-black">Transforming Healthcare</h2>
 
             {/* Left-aligned image */}
             {/* <div className="not-prose float-left mr-6 mb-4 w-full md:w-2/5">
@@ -121,8 +121,8 @@ export default function FeatureArticleWatch() {
             </p>
 
             <aside className="m-10 relative max-w-prose md:float-left md:clear-both 2xl:-ml-60 md:w-96">
-              <svg className="mb-2 h-6" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
-              <blockquote className="font-heading text-3xl border-none p-0 m-0 text-inherit">
+              <svg className="mb-2 h-7 fill-[#3317db]" viewBox="0 0 48 31"><g><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
+              <blockquote className="font-heading text-3xl border-none p-0 m-0 font-black text-prose-headings">
                 I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
               </blockquote>
               <p className="text-sm text-muted-foreground mt-2">Andrew Ng, Co-founder of Google Brain</p>
@@ -142,7 +142,7 @@ export default function FeatureArticleWatch() {
               that help surgeons perform procedures with greater precision.
             </p>
 
-            <h2>Revolutionizing Transportation</h2>
+            <h2 className="font-black">Revolutionizing Transportation</h2>
 
             <p>
               Self-driving cars represent one of the most visible applications of
@@ -197,7 +197,7 @@ export default function FeatureArticleWatch() {
               to position inventory strategically and reduce delivery times.
             </p>
 
-            <h2>The Future of Work</h2>
+            <h2 className="font-black">The Future of Work</h2>
             <p>
               As AI continues to advance, questions about its impact on employment
               loom large. While some jobs will undoubtedly be automated, history
@@ -212,7 +212,7 @@ export default function FeatureArticleWatch() {
               become increasingly valuable.
             </p>
 
-            <h2>Ethical Considerations</h2>
+            <h2 className="font-black">Ethical Considerations</h2>
             <p>
               The rapid advancement of AI raises important ethical questions.
               Issues of privacy, bias, accountability, and control need to be
@@ -227,7 +227,7 @@ export default function FeatureArticleWatch() {
               development of AI.
             </p>
 
-            <h2>Conclusion</h2>
+            <h2 className="font-black">Conclusion</h2>
             <p>
               Artificial intelligence and machine learning are transforming
               industries at an unprecedented pace. While challenges remain, the
@@ -255,7 +255,7 @@ export default function FeatureArticleWatch() {
               </div>
               <div>
                 <h3
-                  className="font-semibold font-body text-foreground uppercase"
+                  className="font-black font-body text-foreground uppercase"
                 >
                   John Doe
                 </h3>
@@ -270,7 +270,7 @@ export default function FeatureArticleWatch() {
 
           {/* Related Articles */}
           <div className="mt-12 pt-8 border-t">
-            <h3 className="text-xl mb-6">Related Articles</h3>
+            <h3 className="text-xl mb-6 font-black">Related Articles</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[1, 2, 3].map((item) => (
                 <div key={item} className="group cursor-pointer">
@@ -282,7 +282,7 @@ export default function FeatureArticleWatch() {
                       className="object-cover transition-transform group-hover:scale-105"
                     />
                   </div>
-                  <h4 className="group-hover:text-primary transition-colors font-normal">
+                  <h4 className="group-hover:text-primary transition-colors font-black">
                     How AI is Changing the Future of Work
                   </h4>
                   <p className="text-sm text-muted-foreground">March 20, 2025</p>

@@ -6,7 +6,7 @@ export default function FeatureArticleMonitor() {
       {/* Article Header Content */}
       <div className="inset-0 flex flex-col justify-end">
         <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 w-full">
-          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 font-heading">
+          <p className="text-xs font-medium text-foreground uppercase tracking-wider mb-2 font-heading">
             TECHNOLOGY
           </p>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 font-body break-words hyphens-auto">
@@ -28,7 +28,7 @@ export default function FeatureArticleMonitor() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-medium text-foreground">By John Doe</span>
+                  <span className="text-sm font-medium text-foreground">John Doe</span>
                   <span className="text-sm text-muted-foreground">13. september 2024</span>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function FeatureArticleMonitor() {
       {/* Article Content */}
       <div className="max-w-4xl mx-auto px-4 pb-8 md:pb-12">
         <article className="prose prose-lg dark:prose-invert max-w-none">
-          <p className="lead font-heading">
+          <p className="lead font-heading text-muted-foreground">
             Artificial intelligence is no longer a concept of the future—it's
             here, and it's rapidly changing how we live and work. From
             healthcare to finance, transportation to entertainment, AI
@@ -142,71 +142,6 @@ export default function FeatureArticleMonitor() {
             hospital resource management, and even robotic surgery assistants
             that help surgeons perform procedures with greater precision.
           </p>
-
-          {/* Redesigned Fact Box without grey backgrounds */}
-          {/* <div className="not-prose my-12 rounded-lg overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10">
-            <div className="p-6 md:p-8">
-              <h3 className="font-normal uppercase tracking-wider text-sm mb-8 flex items-center text-primary/40 pb-2 font-sans border-b border-primary/10">
-                AI by the Numbers
-              </h3>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="pb-4 transform transition-all hover:-translate-y-1">
-                  <div className="flex items-center mb-3">
-                    <div className="bg-primary/10 rounded-full p-2 mr-3">
-                      <TrendingUp className="w-5 h-5 text-primary" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary">
-                      $15.7 trillion
-                    </div>
-                  </div>
-                  <div className="text-sm text-muted-foreground pl-12">
-                    Potential contribution to the global economy by 2030
-                  </div>
-                </div>
-
-                <div className="pb-4 transform transition-all hover:-translate-y-1">
-                  <div className="flex items-center mb-3">
-                    <div className="bg-primary/10 rounded-full p-2 mr-3">
-                      <BarChart3 className="w-5 h-5 text-primary" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary">37%</div>
-                  </div>
-                  <div className="text-sm text-muted-foreground pl-12">
-                    Of businesses have implemented AI in some form
-                  </div>
-                </div>
-
-                <div className="pb-4 transform transition-all hover:-translate-y-1">
-                  <div className="flex items-center mb-3">
-                    <div className="bg-primary/10 rounded-full p-2 mr-3">
-                      <Cpu className="w-5 h-5 text-primary" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary">77%</div>
-                  </div>
-                  <div className="text-sm text-muted-foreground pl-12">
-                    Of devices we use feature AI in some form
-                  </div>
-                </div>
-
-                <div className="pb-4 transform transition-all hover:-translate-y-1">
-                  <div className="flex items-center mb-3">
-                    <div className="bg-primary/10 rounded-full p-2 mr-3">
-                      <Brain className="w-5 h-5 text-primary" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary">83%</div>
-                  </div>
-                  <div className="text-sm text-muted-foreground pl-12">
-                    Of businesses say AI is a strategic priority
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-xs text-primary/40 mt-6 text-right italic border-t border-primary/10 pt-4">
-                Source: PwC Global AI Study, 2023
-              </div>
-            </div>
-          </div> */}
 
           <h2 className="font-medium">Revolutionizing Transportation</h2>
 
@@ -321,7 +256,7 @@ export default function FeatureArticleMonitor() {
             </div>
             <div>
               <h3
-                className="font-medium font-heading text-primary/90 uppercase"
+                className="font-medium font-heading text-foreground uppercase"
               >
                 John Doe
               </h3>
