@@ -68,12 +68,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        // Watch
-        // sans: ["var(--font-family-montserra)"],
-        // serif: ["var(--font-family-publico-headline)"],
-        // Monitor
-        sans: ["var(--font-family-flama)"],
-        serif: ["var(--font-family-capitolium)"],
+        heading: ["var(--font-family-heading)"],
+        body: ["var(--font-family-body)"],
       },
       keyframes: {
         "accordion-down": {
@@ -97,7 +93,7 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      typography: ({ theme }) => {
+      typography: () => {
         return {
           DEFAULT: {
             css: {

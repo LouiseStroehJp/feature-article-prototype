@@ -2,24 +2,24 @@ import Image from "next/image";
 
 export default function FeatureArticleMonitor() {
   return (
-    <div>
+    <div className="monitor font-body">
       {/* Article Header Content */}
       <div className="inset-0 flex flex-col justify-end">
         <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 w-full">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-2 font-sans">
+          <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2 font-heading">
             TECHNOLOGY
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 font-serif break-words hyphens-auto !font-extralight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 font-body break-words hyphens-auto">
             <span className="italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
             How Machine Learning is Transforming Industries
           </h1>
 
-          <div className="flex font-sans">
-            <div className="flex items-center gap-4 text-muted-foreground">
+          <div className="flex font-heading justify-between">
+            <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                <div className="relative w-10 h-10 rounded-full overflow-hidden border border-white/20">
+                <div className="relative size-10 rounded-full overflow-hidden border border-white/20">
                   <Image
                     src="/author.jpg"
                     alt="Author"
@@ -27,22 +27,14 @@ export default function FeatureArticleMonitor() {
                     className="object-cover"
                   />
                 </div>
-                <span className="text-sm font-medium">By John Doe</span>
+                <div className="flex flex-col">
+                  <span className="text-sm font-medium text-foreground">By John Doe</span>
+                  <span className="text-sm text-muted-foreground">13. september 2024</span>
+                </div>
               </div>
-              <div className="flex items-center gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
-                </svg>
-
-                <span className="text-sm">March 28, 2025</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                </svg>
-
-                <span className="text-sm">8 min read</span>
-              </div>
+            </div>
+            <div>
+              <span className="size-10 rounded-full text-muted-foreground block"></span>
             </div>
           </div>
         </div>
@@ -59,12 +51,12 @@ export default function FeatureArticleMonitor() {
             className="object-cover object-top"
             priority
           />
-          <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px] font-sans">
+          <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px] font-heading">
             Ursula von der Leyen, President of the European Commission, speaks
             during a session of the European Parliament in Strasbourg, France.
           </p>
         </div>
-        <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4 font-sans">
+        <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4 font-heading">
           Ursula von der Leyen, President of the European Commission, speaks
           during a session of the European Parliament in Strasbourg, France.
         </p>
@@ -73,7 +65,7 @@ export default function FeatureArticleMonitor() {
       {/* Article Content */}
       <div className="max-w-4xl mx-auto px-4 pb-8 md:pb-12">
         <article className="prose prose-lg dark:prose-invert max-w-none">
-          <p className="lead font-sans">
+          <p className="lead font-heading">
             Artificial intelligence is no longer a concept of the future—it's
             here, and it's rapidly changing how we live and work. From
             healthcare to finance, transportation to entertainment, AI
@@ -130,11 +122,11 @@ export default function FeatureArticleMonitor() {
           </p>
 
           <aside className="m-10 relative max-w-prose md:float-left md:clear-both 2xl:-ml-60 md:w-96">
-            <svg className="mb-2 h-6 fill-curent" viewBox="0 0 48 31"><g fill="currentColor"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
+            <svg className="mb-2 h-6" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
             <blockquote className="font-serif text-3xl border-none p-0 m-0 text-inherit">
               I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
             </blockquote>
-            <p className="text-sm text-muted-foreground mt-2 font-sans">Andrew Ng, Co-founder of Google Brain</p>
+            <p className="text-sm text-muted-foreground mt-2 font-heading">Andrew Ng, Co-founder of Google Brain</p>
           </aside>
 
           <p>
@@ -243,7 +235,7 @@ export default function FeatureArticleMonitor() {
                 className="object-cover"
               />
             </div>
-            <p className="text-xs lg:text-sm text-muted-foreground mt-2 text-center">
+            <p className="text-xs lg:text-sm text-muted-foreground mt-2 text-center font-heading">
               Autonomous vehicles use AI to navigate complex environments
               safely.
             </p>
@@ -329,11 +321,11 @@ export default function FeatureArticleMonitor() {
             </div>
             <div>
               <h3
-                className="font-semibold font-sans text-primary/90 uppercase"
+                className="font-medium font-heading text-primary/90 uppercase"
               >
                 John Doe
               </h3>
-              <p className="text-muted-foreground font-sans">
+              <p className="text-muted-foreground font-heading">
                 John is a technology journalist with over 10 years of experience
                 covering artificial intelligence and emerging technologies. He
                 holds a Master's degree in Computer Science from MIT.
