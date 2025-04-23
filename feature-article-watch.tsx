@@ -8,10 +8,10 @@ export default function FeatureArticleWatch() {
       {/* Article Header Content */}
       <div className="inset-0 flex flex-col justify-end">
         <div className="max-w-4xl mx-auto px-4 py-8 md:py-12 w-full">
-          <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
+          {/* <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
             TECHNOLOGY
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-6 font-heading break-words hyphens-auto">
+          </p> */}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-12 font-heading break-words hyphens-auto">
             <span className="italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
@@ -51,7 +51,7 @@ export default function FeatureArticleWatch() {
                   >
                     <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
-                  <span className="text-muted-foreground group-hover/linkedin:text-foreground hidden md:block">LinkedIn</span>
+                  {/* <span className="text-muted-foreground group-hover/linkedin:text-foreground hidden md:block">LinkedIn</span> */}
                 </Button>
 
 
@@ -69,7 +69,7 @@ export default function FeatureArticleWatch() {
                   >
                     <path d="M19.2 4.4C19.2 2.9 17.9 1.6 16.4 1.6C14.9 1.6 13.6 2.9 13.6 4.4C13.6 5.9 14.9 7.2 16.4 7.2C17.9 7.2 19.2 5.9 19.2 4.4ZM20 8H12.8C12.8 9.8 11.4 11.2 9.6 11.2C7.8 11.2 6.4 9.8 6.4 8H0V17.6C0 19.1 1.2 20.4 2.8 20.4H20.8C22.3 20.4 23.6 19.1 23.6 17.6V11.6C23.6 9.6 22 8 20 8ZM9.6 8C8.7 8 8 7.3 8 6.4C8 5.5 8.7 4.8 9.6 4.8C10.5 4.8 11.2 5.5 11.2 6.4C11.2 7.3 10.5 8 9.6 8ZM20.4 4.8H19.6V4H18.8V4.8H18V5.6H18.8V6.4H19.6V5.6H20.4V4.8Z" />
                   </svg>
-                  <span className="text-muted-foreground group-hover/teams:text-foreground hidden md:block">Teams</span>
+                  {/* <span className="text-muted-foreground group-hover/teams:text-foreground hidden md:block">Teams</span> */}
                 </Button>
 
                 {/* Email */}
@@ -79,7 +79,7 @@ export default function FeatureArticleWatch() {
                   className="h-10 gap-2 rounded-full hover:border-transparent group/email"
                 >
                   <Mail className="size-5" />
-                  <span className="text-muted-foreground group-hover/email:text-foreground hidden md:block">Email</span>
+                  {/* <span className="text-muted-foreground group-hover/email:text-foreground hidden md:block">Email</span> */}
                 </Button>
 
               </div>
@@ -88,7 +88,7 @@ export default function FeatureArticleWatch() {
         </div>
 
         {/* Featured Image */}
-        <div className="flex flex-col realtive w-full items-center mb-12">
+        <div className="flex flex-col realtive w-full items-center">
           <div className="relative w-full h-[40vh] lg:h-[720px] max-w-screen-xl">
             {/* Featured Image */}
             <Image
@@ -113,14 +113,15 @@ export default function FeatureArticleWatch() {
 
         <article className="prose prose-lg dark:prose-invert max-w-none">
           <div className="max-w-4xl mx-auto px-4">
-            <p className="lead text-muted-foreground">
+            <p className="lead text-muted-foreground text-xl md:text-2xl my-12">
               Artificial intelligence is no longer a concept of the future—it's
               here, and it's rapidly changing how we live and work. From
               healthcare to finance, transportation to entertainment, AI
               technologies are revolutionizing industries across the globe.
             </p>
 
-            <p>
+
+            <p className="first-letter:float-left first-letter:mr-3 first-letter:md:text-8xl first-letter:text-7xl first-letter:leading-none first-letter:font-heading first-letter:text-foreground first-letter:font-thin first-line:uppercase first-line:tracking-wider">
               Machine learning, a subset of artificial intelligence, has seen
               exponential growth in recent years. This technology allows computers
               to learn from data and improve over time without being explicitly
