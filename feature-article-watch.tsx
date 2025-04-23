@@ -11,7 +11,7 @@ export default function FeatureArticleWatch() {
           {/* <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
             TECHNOLOGY
           </p> */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-12 font-heading break-words hyphens-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-8 md:mb-12 font-heading break-words hyphens-auto">
             <span className="italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
@@ -261,8 +261,8 @@ export default function FeatureArticleWatch() {
               than they eliminate.
             </p>
 
-            <aside className="md:ml-10 md:mb-10 relative md:float-right md:clear-both 2xl:-mr-60 md:w-96 py-6 px-5">
-              <h1 className="font-heading text-3xl p-0 m-0 text-foreground">Leverandører på SKI 02.15 It-rådgivning</h1>
+            <aside className="md:ml-10 md:mb-10 relative md:float-right md:clear-both 2xl:-mr-60 md:w-96 py-6 px-5 border-t">
+              <h1 className="font-semibold font-body text-foreground uppercase text-base">Leverandører på SKI 02.15 It-rådgivning</h1>
               <div className="font-body text-base *:font-body *:text-base prose-ol:p-0 text-muted-foreground prose-ul:p-0 prose-li:relative prose-li:z-0 prose-li:pb-0.5 prose-li:pl-2 prose-li:before:absolute prose-li:before:left-0 prose-li:before:top-0.875 prose-li:before:z-10 prose-li:before:h-0.875 prose-li:before:w-0.875 prose-li:before:rounded-full prose-li:before:bg-primary prose prose-gray hyphens-manual break-words">
                 <ul className="list-disc list-inside text-sm">
                   <li>Accenture A/S</li>
