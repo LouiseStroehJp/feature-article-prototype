@@ -210,7 +210,7 @@ export default function FeatureArticleWatch() {
           </div>
 
           <div className="flex flex-col relative w-full items-center">
-            <div className="relative w-full h-[40vh] lg:h-[720px] max-w-screen-xl">
+            <div className="relative w-full h-[40vh] lg:h-[720px] max-w-[calc(100%-32px)] xl:max-w-screen-xl">
               {/* Featured Image */}
               <Image
                 src="/autonomous-vehicle.jpg"
