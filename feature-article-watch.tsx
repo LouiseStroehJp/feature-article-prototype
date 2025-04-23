@@ -87,7 +87,7 @@ export default function FeatureArticleWatch() {
           </div>
         </div>
 
-        {/* Hero Section with Featured Image */}
+        {/* Featured Image */}
         <div className="flex flex-col realtive w-full items-center mb-12">
           <div className="relative w-full h-[40vh] lg:h-[720px] max-w-screen-xl">
             {/* Featured Image */}
@@ -98,20 +98,21 @@ export default function FeatureArticleWatch() {
               className="object-cover object-top"
               priority
             />
-            {/* <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px]">
+            <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px]">
               Ursula von der Leyen, President of the European Commission, speaks
               during a session of the European Parliament in Strasbourg, France.
-            </p> */}
+            </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-2 max-w-4xl mx-auto px-4">
+          <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4">
             Ursula von der Leyen, President of the European Commission, speaks
             during a session of the European Parliament in Strasbourg, France.
           </p>
         </div>
 
         {/* Article Content */}
-        <div className="max-w-4xl mx-auto px-4 pb-8 md:pb-12">
-          <article className="prose prose-lg dark:prose-invert max-w-none">
+
+        <article className="prose prose-lg dark:prose-invert max-w-none">
+          <div className="max-w-4xl mx-auto px-4">
             <p className="lead text-muted-foreground">
               Artificial intelligence is no longer a concept of the future—it's
               here, and it's rapidly changing how we live and work. From
@@ -119,7 +120,6 @@ export default function FeatureArticleWatch() {
               technologies are revolutionizing industries across the globe.
             </p>
 
-            <h2>The Rise of Machine Learning</h2>
             <p>
               Machine learning, a subset of artificial intelligence, has seen
               exponential growth in recent years. This technology allows computers
@@ -169,7 +169,7 @@ export default function FeatureArticleWatch() {
             </p>
 
             <aside className="m-10 relative max-w-prose md:float-left md:clear-both 2xl:-ml-60 md:w-96">
-              <svg className="mb-2 h-6" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
+              <svg className="mb-2 h-16 md:h-20 opacity-5 absolute -top-6 -left-10" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
               <blockquote className="font-heading text-3xl border-none p-0 m-0 text-foreground">
                 I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
               </blockquote>
@@ -207,22 +207,29 @@ export default function FeatureArticleWatch() {
               their surroundings, then use AI to make split-second decisions about
               how to respond to changing conditions.
             </p>
+          </div>
 
-            <div className="not-prose my-8">
-              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
-                <Image
-                  src="/autonomous-vehicle.jpg"
-                  alt="Self-driving car technology"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <p className="text-xs lg:text-sm text-muted-foreground mt-2">
+          <div className="flex flex-col relative w-full items-center">
+            <div className="relative w-full h-[40vh] lg:h-[720px] max-w-screen-xl">
+              {/* Featured Image */}
+              <Image
+                src="/autonomous-vehicle.jpg"
+                alt="Self-driving car technology"
+                fill
+                className="object-cover m-0"
+              />
+              <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px] m-0">
                 Autonomous vehicles use AI to navigate complex environments
                 safely.
               </p>
             </div>
+            <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4 w-full">
+              Autonomous vehicles use AI to navigate complex environments
+              safely.
+            </p>
+          </div>
 
+          <div className="max-w-4xl mx-auto px-4 pb-8 md:pb-12">
             <p>
               The potential benefits of self-driving technology extend far beyond
               convenience. Studies suggest that widespread adoption of autonomous
@@ -252,6 +259,29 @@ export default function FeatureArticleWatch() {
               suggests that technological revolutions tend to create more jobs
               than they eliminate.
             </p>
+
+            <aside className="md:ml-10 md:mb-10 relative md:float-right md:clear-both 2xl:-mr-60 md:w-96 py-6 px-5">
+              <h1 className="font-heading text-3xl p-0 m-0 text-foreground">Leverandører på SKI 02.15 It-rådgivning</h1>
+              <div className="font-body text-base *:font-body *:text-base prose-ol:p-0 text-muted-foreground prose-ul:p-0 prose-li:relative prose-li:z-0 prose-li:pb-0.5 prose-li:pl-2 prose-li:before:absolute prose-li:before:left-0 prose-li:before:top-0.875 prose-li:before:z-10 prose-li:before:h-0.875 prose-li:before:w-0.875 prose-li:before:rounded-full prose-li:before:bg-primary prose prose-gray hyphens-manual break-words">
+                <ul className="list-disc list-inside text-sm">
+                  <li>Accenture A/S</li>
+                  <li>Capgemini Danmark</li>
+                  <li>Deloitte</li>
+                  <li>Emagine Consulting</li>
+                  <li>EY</li>
+                  <li>Globeteam</li>
+                  <li>Implement Consulting Group</li>
+                  <li>Netcompany</li>
+                  <li>PA Consulting Group</li>
+                  <li><span><span className="hyphens-auto">Pricewaterhousecoopers </span></span></li>
+                  <li>Trifork</li>
+                  <li>Venzo</li>
+                  <li>(Konsortium) Epico-it, Sopra Steria, J.H. Schultz Information, A-2, Wingmen Solution</li>
+                  <li>(Konsortium) Devoteam, Optimumit, Trustworks, Twoday</li>
+                </ul>
+              </div>
+
+            </aside>
 
             <p>
               The key will be adaptation. Workers will need to develop skills that
@@ -288,36 +318,37 @@ export default function FeatureArticleWatch() {
               policymakers, and the public will be essential to ensure that AI
               develops in ways that benefit humanity as a whole.
             </p>
-          </article>
+          </div>
+        </article>
 
-          {/* Author Bio */}
-          <div className="mt-12 pt-8 border-t">
-            <div className="flex items-start gap-4">
-              <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
-                <Image
-                  src="/author.jpg"
-                  alt="Author"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h3
-                  className="font-semibold font-body text-foreground uppercase"
-                >
-                  John Doe
-                </h3>
-                <p className="text-muted-foreground">
-                  John is a technology journalist with over 10 years of experience
-                  covering artificial intelligence and emerging technologies. He
-                  holds a Master's degree in Computer Science from MIT.
-                </p>
-              </div>
+        {/* Author Bio */}
+        <div className="mt-12 pt-8 border-t max-w-4xl mx-auto px-4 pb-8 md:pb-12">
+          <div className="flex items-start gap-4">
+            <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
+              <Image
+                src="/author.jpg"
+                alt="Author"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h3
+                className="font-semibold font-body text-foreground uppercase"
+              >
+                John Doe
+              </h3>
+              <p className="text-muted-foreground">
+                John is a technology journalist with over 10 years of experience
+                covering artificial intelligence and emerging technologies. He
+                holds a Master's degree in Computer Science from MIT.
+              </p>
             </div>
           </div>
+        </div>
 
-          {/* Related Articles */}
-          <div className="mt-12 pt-8 border-t">
+        {/* Related Articles */}
+        {/* <div className="mt-12 pt-8 border-t">
             <h3 className="text-xl mb-6">Related Articles</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[1, 2, 3].map((item) => (
@@ -337,8 +368,7 @@ export default function FeatureArticleWatch() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

@@ -161,7 +161,7 @@ export default function FeatureArticleKforum() {
             </p>
 
             <div className="not-prose my-8">
-              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
+              <div className="relative aspect-[16/9] w-full overflow-hidden">
                 <Image
                   src="/autonomous-vehicle.jpg"
                   alt="Self-driving car technology"
