@@ -11,12 +11,18 @@ export default function FeatureArticleWatch() {
           {/* <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">
             TECHNOLOGY
           </p> */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-8 md:mb-12 font-heading break-words hyphens-auto">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-4 md:mb-6 font-heading break-words hyphens-auto">
             <span className="italic">
               The Future of Artificial Intelligence:{" "}
             </span>{" "}
             How Machine Learning is Transforming Industries
           </h1>
+
+          <p className="lead text-[hsl(0,0%,40%)] text-xl md:text-2xl mb-10 md:mb-14">
+            Artificial intelligence is no longer a concept of the future—it's
+            here, and it's rapidly changing how we live and work.
+          </p>
+
 
           <div className="flex font-body justify-between">
             <div className="flex items-center gap-4">
@@ -30,8 +36,8 @@ export default function FeatureArticleWatch() {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-sm font-bold text-foreground">John Doe Junior Hansen Jensen</span>
-                  <span className="text-sm text-muted-foreground">13. september 2024 kl. 16.31</span>
+                  <a className="text-sm font-bold text-foreground underline" href="#">John Doe Junior Hansen Jensen</a>
+                  <span className="text-sm text-[hsl(0,0%,60%)]">13. september 2024 kl. 16.31</span>
                 </div>
               </div>
             </div>
@@ -98,12 +104,12 @@ export default function FeatureArticleWatch() {
               className="object-cover object-top"
               priority
             />
-            <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px]">
+            <p className="text-sm text-[hsl(0,0%,60%)] hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px]">
               Ursula von der Leyen, President of the European Commission, speaks
               during a session of the European Parliament in Strasbourg, France.
             </p>
           </div>
-          <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4">
+          <p className="text-sm text-[hsl(0,0%,60%)] mt-2 2xl:hidden max-w-4xl mx-auto px-4">
             Ursula von der Leyen, President of the European Commission, speaks
             during a session of the European Parliament in Strasbourg, France.
           </p>
@@ -111,16 +117,8 @@ export default function FeatureArticleWatch() {
 
         {/* Article Content */}
 
-        <article className="prose prose-lg dark:prose-invert max-w-none">
+        <article className="prose md:prose-lg dark:prose-invert max-w-none">
           <div className="max-w-4xl mx-auto px-4">
-            <p className="lead text-muted-foreground text-xl md:text-2xl my-12">
-              Artificial intelligence is no longer a concept of the future—it's
-              here, and it's rapidly changing how we live and work. From
-              healthcare to finance, transportation to entertainment, AI
-              technologies are revolutionizing industries across the globe.
-            </p>
-
-
             <p className="first-letter:float-left first-letter:mr-3 first-letter:md:text-8xl first-letter:text-7xl first-letter:leading-none first-letter:font-heading first-letter:text-foreground first-letter:font-thin first-line:uppercase first-line:tracking-wider">
               Machine learning, a subset of artificial intelligence, has seen
               exponential growth in recent years. This technology allows computers
@@ -170,11 +168,11 @@ export default function FeatureArticleWatch() {
             </p>
 
             <aside className="m-10 relative max-w-prose md:float-left md:clear-both 2xl:-ml-60 md:w-96">
-              <svg className="mb-2 h-16 md:h-20 opacity-5 absolute -top-6 -left-10" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
-              <blockquote className="font-heading text-3xl border-none p-0 m-0 text-foreground">
+              <svg className="mb-2 h-16 md:h-20 opacity-5 absolute -top-6 -left-8" viewBox="0 0 48 31"><g fill="fill-foreground"><path d="M0 28.361c8.575-3.848 12.584-8.355 12.362-13.191A5.066 5.066 0 0 1 8.8 16.379c-4.343 0-7.461-3.078-7.461-8.135C1.337 3.077 5.68 0 10.8 0c5.568 0 10.691 3.847 10.691 11.433C21.494 21.326 13.921 28.361.779 31Z"></path><path d="M26.506 28.361c8.575-3.847 12.585-8.355 12.362-13.191a5.066 5.066 0 0 1-3.564 1.209c-4.343 0-7.461-3.078-7.461-8.135C27.843 3.077 32.186 0 37.309 0 42.877 0 48 3.847 48 11.433 48 21.327 40.427 28.362 27.285 31Z"></path></g></svg>
+              <blockquote className="font-heading text-3xl border-none !p-0 !m-0 text-foreground">
                 I actually have a hard time thinking of an industry that I don't think AI will transform in the next several years.
               </blockquote>
-              <p className="text-sm text-muted-foreground mt-2">Andrew Ng, Co-founder of Google Brain</p>
+              <p className="text-sm text-[hsl(0,0%,60%)] mt-2">Andrew Ng, Co-founder of Google Brain</p>
             </aside>
 
             <p>
@@ -217,14 +215,14 @@ export default function FeatureArticleWatch() {
                 src="/autonomous-vehicle.jpg"
                 alt="Self-driving car technology"
                 fill
-                className="object-cover m-0"
+                className="object-cover !m-0"
               />
-              <p className="text-sm text-muted-foreground hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px] m-0">
+              <p className="text-sm text-[hsl(0,0%,60%)] hidden 2xl:block 2xl:w-[200px] 2xl:absolute 2xl:bottom-0 2xl:right-[-216px] !m-0">
                 Autonomous vehicles use AI to navigate complex environments
                 safely.
               </p>
             </div>
-            <p className="text-sm text-muted-foreground mt-2 2xl:hidden max-w-4xl mx-auto px-4 w-full">
+            <p className="text-sm text-[hsl(0,0%,60%)] mt-2 2xl:hidden max-w-4xl mx-auto px-4 w-full">
               Autonomous vehicles use AI to navigate complex environments
               safely.
             </p>
@@ -262,7 +260,7 @@ export default function FeatureArticleWatch() {
             </p>
 
             <aside className="md:ml-10 md:mb-10 relative md:float-right md:clear-both 2xl:-mr-60 md:w-96 py-6 px-5 border-t">
-              <h1 className="font-semibold font-body text-foreground uppercase text-base">Leverandører på SKI 02.15 It-rådgivning</h1>
+              <h1 className="font-semibold font-body text-foreground uppercase !text-base">Leverandører på SKI 02.15 It-rådgivning</h1>
               <div className="font-body text-base *:font-body *:text-base prose-ol:p-0 text-muted-foreground prose-ul:p-0 prose-li:relative prose-li:z-0 prose-li:pb-0.5 prose-li:pl-2 prose-li:before:absolute prose-li:before:left-0 prose-li:before:top-0.875 prose-li:before:z-10 prose-li:before:h-0.875 prose-li:before:w-0.875 prose-li:before:rounded-full prose-li:before:bg-primary prose prose-gray hyphens-manual break-words">
                 <ul className="list-disc list-inside text-sm">
                   <li>Accenture A/S</li>
