@@ -118,7 +118,7 @@ export default function FeatureArticleWatch() {
         {/* Article Content */}
 
         <article className="prose md:prose-lg dark:prose-invert max-w-none">
-          <div className="max-w-4xl mx-auto px-4">
+          <div className="max-w-4xl mx-auto px-4 py-4">
             <p className="first-letter:float-left first-letter:mr-3 first-letter:md:text-8xl first-letter:text-7xl first-letter:leading-none first-letter:font-heading first-letter:text-foreground first-letter:font-thin first-line:uppercase first-line:tracking-wider">
               Machine learning, a subset of artificial intelligence, has seen
               exponential growth in recent years. This technology allows computers
